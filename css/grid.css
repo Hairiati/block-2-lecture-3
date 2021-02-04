@@ -1,0 +1,16 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); /* minmax for responsive regardless of device sizes (1fr 1fr 1fr. can also put as -repeat(3, 1fr))*/
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+}
+
+.wrapper div{
+    background-color: blanchedalmond;
+}
+#five {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: auto;
+}
